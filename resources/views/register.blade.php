@@ -10,7 +10,7 @@
  
     <br><br>
  
-    <!-- @if and @foreach to display validation errors
+    <!-- @if and @foreach to display validation errors -->
     @if ($errors->any())
         <div style="color: red; border: 1px solid red; padding: 10px; margin-bottom: 15px;">
             <strong>Please fix the following errors:</strong>
@@ -20,7 +20,7 @@
                 @endforeach
             </ul>
         </div>
-    @endif -->
+    @endif
 
     <form action="{{ route('register.submit') }}" method="POST">
         <!-- @csrf for form security -->
